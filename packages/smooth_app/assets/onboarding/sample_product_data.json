@@ -24,6 +24,7 @@
                   "id" : "low_salt",
                   "match" : 75,
                   "name" : "Salt",
+                  "panel_id" : "nutrient_level_salt",
                   "status" : "known",
                   "title" : "Salt in moderate quantity"
                },
@@ -34,6 +35,7 @@
                   "id" : "low_fat",
                   "match" : 96.6666666666667,
                   "name" : "Fat",
+                  "panel_id" : "nutrient_level_fat",
                   "status" : "known",
                   "title" : "Fat in low quantity"
                },
@@ -44,6 +46,7 @@
                   "id" : "low_sugars",
                   "match" : 98,
                   "name" : "Sugars",
+                  "panel_id" : "nutrient_level_sugars",
                   "status" : "known",
                   "title" : "Sugars in low quantity"
                },
@@ -54,6 +57,7 @@
                   "id" : "low_saturated_fat",
                   "match" : 97.3333333333333,
                   "name" : "Saturated fat",
+                  "panel_id" : "nutrient_level_saturated_fat",
                   "status" : "known",
                   "title" : "Saturated fat in low quantity"
                }
@@ -330,7 +334,17 @@
       ],
       "brands" : "Open Food Facts",
       "categories_tags_fr" : [
-         "en:tinned-potatoes"
+         "Aliments et boissons à base de végétaux",
+         "Produits laitiers",
+         "Aliments d'origine végétale",
+         "Aliments à base de fruits et de légumes",
+         "Viandes et dérivés",
+         "Légumes et dérivés",
+         "Fruits et produits dérivés",
+         "Viandes",
+         "Légumes",
+         "Fruits",
+         "nl:vega"
       ],
       "code" : "093270067481501",
       "ecoscore_data" : {
@@ -557,6 +571,7 @@
                   {
                      "environmental_score_material_score" : 81,
                      "environmental_score_shape_ratio" : 1,
+                     "food_contact" : 1,
                      "material" : "en:glass",
                      "recycling" : "en:recycle",
                      "shape" : "en:bottle"
@@ -564,6 +579,7 @@
                   {
                      "environmental_score_material_score" : 76,
                      "environmental_score_shape_ratio" : 0.1,
+                     "food_contact" : 1,
                      "material" : "en:steel",
                      "recycling" : "en:recycle",
                      "shape" : "en:bottle-cap"
@@ -583,6 +599,7 @@
          "agribalyse" : {
             "warning" : "missing_agribalyse_match"
          },
+         "grade" : "unknown",
          "missing" : {
             "agb_category" : 1
          },
@@ -619,11 +636,8 @@
          "status" : "unknown"
       },
       "ecoscore_grade" : "unknown",
-      "ecoscore_score" : 122,
       "environment_impact_level_tags" : [],
-      "image_front_small_url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.200.jpg",
-      "image_front_url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.400.jpg",
-      "image_small_url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.200.jpg",
+      "image_ingredients_url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.400.jpg",
       "ingredients_analysis_tags" : [
          "en:palm-oil-free",
          "en:vegan",
@@ -721,7 +735,8 @@
             "title_element" : {
                "grade" : "unknown",
                "icon_url" : "https://static.openfoodfacts.org/images/attributes/dist/green-score-unknown.svg",
-               "title" : "Green-Score not computed - Unknown environmental impact",
+               "subtitle" : "Unknown environmental impact",
+               "title" : "Green-Score not computed",
                "type" : "grade"
             },
             "topics" : [
@@ -755,6 +770,34 @@
                {
                   "element_type" : "panel_group",
                   "panel_group_element" : {
+                     "image" : {
+                        "alt" : "A good product for you - Ingredients",
+                        "id" : "ingredients_en",
+                        "lc" : "en",
+                        "sizes" : {
+                           "100" : {
+                              "height" : 100,
+                              "url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.100.jpg",
+                              "width" : 45
+                           },
+                           "200" : {
+                              "height" : 200,
+                              "url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.200.jpg",
+                              "width" : 90
+                           },
+                           "400" : {
+                              "height" : 400,
+                              "url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.400.jpg",
+                              "width" : 180
+                           },
+                           "full" : {
+                              "height" : 4000,
+                              "url" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.full.jpg",
+                              "width" : 1800
+                           }
+                        },
+                        "type" : "ingredients"
+                     },
                      "panel_group_id" : "ingredients",
                      "panel_ids" : [
                         "ingredients"
@@ -837,6 +880,83 @@
                "problem"
             ]
          },
+         "ingredient_1" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Butternut squash: 50.0%"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_2" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Water: 25.0% (estimate)"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_3" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Carrot: 10.0%"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_4" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Sweet potato: 5.0% (estimate)"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_5" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Leek: 5.0% (estimate)"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_6" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Potato: 2.5% (estimate)"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredient_7" : {
+            "elements" : [],
+            "level" : "info",
+            "size" : "small",
+            "title_element" : {
+               "title" : "Salt: 2.5% (estimate)"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
          "ingredients" : {
             "elements" : [
                {
@@ -848,6 +968,12 @@
                      "html" : "Butternut squash 50%, water, carrots 10%, sweet potato, leeks, potatoes, salt.",
                      "language" : "English",
                      "lc" : "en"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredients_list"
                   }
                }
             ],
@@ -996,6 +1122,60 @@
                "icon_size" : "small",
                "icon_url" : "https://static.openfoodfacts.org/images/icons/dist/vegetarian.svg",
                "title" : "Vegetarian"
+            },
+            "topics" : [
+               "health"
+            ]
+         },
+         "ingredients_list" : {
+            "elements" : [
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_1"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_2"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_3"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_4"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_5"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_6"
+                  }
+               },
+               {
+                  "element_type" : "panel",
+                  "panel_element" : {
+                     "panel_id" : "ingredient_7"
+                  }
+               }
+            ],
+            "expanded" : true,
+            "level" : "info",
+            "title_element" : {
+               "title" : "Ingredient information"
             },
             "topics" : [
                "health"
@@ -1552,6 +1732,12 @@
                            "text" : "As sold<br>per serving (115g)",
                            "text_for_small_screens" : "per serving",
                            "type" : "text"
+                        },
+                        {
+                           "column_group_id" : "comparisons",
+                           "shown_by_default" : true,
+                           "text" : "Compared to: Fruits",
+                           "type" : "text"
                         }
                      ],
                      "id" : "nutrition_facts_table",
@@ -1568,6 +1754,10 @@
                               },
                               {
                                  "text" : "138 kj<br>(67 kcal)"
+                              },
+                              {
+                                 "evaluation" : "good",
+                                 "text" : "-74%"
                               }
                            ]
                         },
@@ -1583,6 +1773,10 @@
                               },
                               {
                                  "text" : "0.575 g"
+                              },
+                              {
+                                 "evaluation" : "bad",
+                                 "text" : "+255%"
                               }
                            ]
                         },
@@ -1598,6 +1792,46 @@
                               },
                               {
                                  "text" : "0.23 g"
+                              },
+                              {
+                                 "evaluation" : "bad",
+                                 "text" : "+3,754%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 1,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Trans fat"
+                              },
+                              {
+                                 "text" : "0 g"
+                              },
+                              {
+                                 "text" : "0 g"
+                              },
+                              {
+                                 "text" : ""
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Cholesterol"
+                              },
+                              {
+                                 "text" : "0 mg"
+                              },
+                              {
+                                 "text" : "0 mg"
+                              },
+                              {
+                                 "text" : ""
                               }
                            ]
                         },
@@ -1613,6 +1847,10 @@
                               },
                               {
                                  "text" : "0.46 g"
+                              },
+                              {
+                                 "evaluation" : "bad",
+                                 "text" : "+4,611%"
                               }
                            ]
                         },
@@ -1628,6 +1866,9 @@
                               },
                               {
                                  "text" : "4.6 g"
+                              },
+                              {
+                                 "text" : "-84%"
                               }
                            ]
                         },
@@ -1643,6 +1884,10 @@
                               },
                               {
                                  "text" : "3.45 g"
+                              },
+                              {
+                                 "evaluation" : "good",
+                                 "text" : "+12%"
                               }
                            ]
                         },
@@ -1658,6 +1903,10 @@
                               },
                               {
                                  "text" : "0.575 g"
+                              },
+                              {
+                                 "evaluation" : "good",
+                                 "text" : "-97%"
                               }
                            ]
                         },
@@ -1673,6 +1922,100 @@
                               },
                               {
                                  "text" : "1.15 g"
+                              },
+                              {
+                                 "evaluation" : "good",
+                                 "text" : "+39%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Vitamin A"
+                              },
+                              {
+                                 "text" : "0 µg"
+                              },
+                              {
+                                 "text" : "0 µg"
+                              },
+                              {
+                                 "text" : "-100%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Vitamin C (ascorbic acid)"
+                              },
+                              {
+                                 "text" : "0 mg"
+                              },
+                              {
+                                 "text" : "0 mg"
+                              },
+                              {
+                                 "text" : "-100%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Calcium"
+                              },
+                              {
+                                 "text" : "30 mg"
+                              },
+                              {
+                                 "text" : "34.5 mg"
+                              },
+                              {
+                                 "text" : "+126%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Iron"
+                              },
+                              {
+                                 "text" : "0.75 mg"
+                              },
+                              {
+                                 "text" : "0.862 mg"
+                              },
+                              {
+                                 "text" : "+128%"
+                              }
+                           ]
+                        },
+                        {
+                           "values" : [
+                              {
+                                 "level" : 0,
+                                 "style" : "max-width:15rem",
+                                 "text" : "Potassium"
+                              },
+                              {
+                                 "text" : "300 mg"
+                              },
+                              {
+                                 "text" : "345 mg"
+                              },
+                              {
+                                 "text" : "+78%"
                               }
                            ]
                         },
@@ -1688,6 +2031,9 @@
                               },
                               {
                                  "text" : "65 %"
+                              },
+                              {
+                                 "text" : ""
                               }
                            ]
                         }
@@ -1771,7 +2117,7 @@
                   "element_type" : "text",
                   "text_element" : {
                      "evaluation" : "good",
-                     "html" : "\n                        \n                            \n                                \n                                <strong>\n                                    Bottle\n                                    \n                                </strong>\n                                    \n                                        (Glass)\n                                    \n                                    <br>\n                            \n                        \n                            \n                                \n                                <strong>\n                                    Bottle cap\n                                    \n                                </strong>\n                                    \n                                        (Steel)\n                                    \n                                    <br>\n                            \n                        \n                        ",
+                     "html" : "\n                        \n                            \n                                \n                                <strong>\n                                    Bottle\n                                    \n                                </strong>\n                                    \n                                        (Glass)\n                                    \n                                    \n                                        - In contact with food\n                                    \n                                    <br>\n                            \n                        \n                            \n                                \n                                <strong>\n                                    Bottle cap\n                                    \n                                </strong>\n                                    \n                                        (Steel)\n                                    \n                                    \n                                        - In contact with food\n                                    \n                                    <br>\n                            \n                        \n                        ",
                      "icon_alt" : "Recycle",
                      "icon_color_from_evaluation" : true,
                      "icon_url" : "https://static.openfoodfacts.org/images/icons/dist/recycle-variant.svg",
@@ -1980,6 +2326,11 @@
          "sugars" : "low"
       },
       "nutriments" : {
+         "calcium" : 0.03,
+         "calcium_100g" : 0.03,
+         "calcium_serving" : 0.0345,
+         "calcium_unit" : "g",
+         "calcium_value" : 0.03,
          "carbohydrates" : 4,
          "carbohydrates_100g" : 4,
          "carbohydrates_serving" : 4.6,
@@ -1988,6 +2339,11 @@
          "carbon-footprint-from-known-ingredients_100g" : 18,
          "carbon-footprint-from-known-ingredients_product" : 36,
          "carbon-footprint-from-known-ingredients_serving" : 20.7,
+         "cholesterol" : 0,
+         "cholesterol_100g" : 0,
+         "cholesterol_serving" : 0,
+         "cholesterol_unit" : "g",
+         "cholesterol_value" : 0,
          "energy" : 120,
          "energy-kcal" : 59,
          "energy-kcal_100g" : 59,
@@ -2019,11 +2375,21 @@
          "fruits-vegetables-legumes-estimate-from-ingredients_serving" : 65,
          "fruits-vegetables-nuts-estimate-from-ingredients_100g" : 65,
          "fruits-vegetables-nuts-estimate-from-ingredients_serving" : 65,
+         "iron" : 0.00075,
+         "iron_100g" : 0.00075,
+         "iron_serving" : 0.000862,
+         "iron_unit" : "g",
+         "iron_value" : 0.00075,
          "nova-group" : 3,
          "nova-group_100g" : 3,
          "nova-group_serving" : 3,
          "nutrition-score-fr" : -1,
          "nutrition-score-fr_100g" : -1,
+         "potassium" : 0.3,
+         "potassium_100g" : 0.3,
+         "potassium_serving" : 0.345,
+         "potassium_unit" : "g",
+         "potassium_value" : 0.3,
          "proteins" : 1,
          "proteins_100g" : 1,
          "proteins_serving" : 1.15,
@@ -2048,22 +2414,51 @@
          "sugars_100g" : 0.5,
          "sugars_serving" : 0.575,
          "sugars_unit" : "g",
-         "sugars_value" : 0.5
+         "sugars_value" : 0.5,
+         "trans-fat" : 0,
+         "trans-fat_100g" : 0,
+         "trans-fat_serving" : 0,
+         "trans-fat_unit" : "g",
+         "trans-fat_value" : 0,
+         "vitamin-a" : 0,
+         "vitamin-a_100g" : 0,
+         "vitamin-a_serving" : 0,
+         "vitamin-a_unit" : "g",
+         "vitamin-a_value" : 0,
+         "vitamin-c" : 0,
+         "vitamin-c_100g" : 0,
+         "vitamin-c_serving" : 0,
+         "vitamin-c_unit" : "g",
+         "vitamin-c_value" : 0
       },
       "nutrition_grade_fr" : "a",
       "product_name" : "A good product for you",
       "product_quantity" : "200",
       "quantity" : "200 g",
       "selected_images" : {
-         "front" : {
+         "ingredients" : {
             "display" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.400.jpg"
+               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.400.jpg",
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_fr.746.400.jpg"
             },
             "small" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.200.jpg"
+               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.200.jpg",
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_fr.746.200.jpg"
             },
             "thumb" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.100.jpg"
+               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_en.765.100.jpg",
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/ingredients_fr.746.100.jpg"
+            }
+         },
+         "nutrition" : {
+            "display" : {
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/nutrition_fr.743.400.jpg"
+            },
+            "small" : {
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/nutrition_fr.743.200.jpg"
+            },
+            "thumb" : {
+               "fr" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/nutrition_fr.743.100.jpg"
             }
          }
       },
@@ -2084,8 +2479,8 @@
          "en:photos-to-be-validated",
          "en:packaging-photo-to-be-selected",
          "en:nutrition-photo-to-be-selected",
-         "en:ingredients-photo-to-be-selected",
-         "en:front-photo-selected",
+         "en:ingredients-photo-selected",
+         "en:front-photo-to-be-selected",
          "en:photos-uploaded"
       ]
    },
