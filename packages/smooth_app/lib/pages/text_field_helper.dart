@@ -21,7 +21,7 @@ class TextEditingControllerWithHistory extends TextEditingController {
   void resetToInitialValue() {
     assert(_initialValue != null);
     if (_initialValue != null) {
-      text = _initialValue;
+      text = _initialValue!;
     }
   }
 

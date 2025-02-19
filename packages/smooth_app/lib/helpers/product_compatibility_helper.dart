@@ -72,10 +72,10 @@ class ProductCompatibilityHelper {
   String? getFormattedScore({bool singleDigitAllowed = false}) {
     if (_score == null || status == MatchedProductStatusV2.UNKNOWN_MATCH) {
       return null;
-    } else if (_score == 0 || (singleDigitAllowed && _score < 10)) {
-      return _score.toStringAsFixed(0);
+    } else if (_score! == 0 || (singleDigitAllowed && _score! < 10)) {
+      return _score!.toStringAsFixed(0);
     }
 
-    return NumberFormat('00').format(_score.toInt());
+    return NumberFormat('00').format(_score!.toInt());
   }
 }
